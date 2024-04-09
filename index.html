@@ -4,121 +4,182 @@
 <head>
     <meta charset="UTF-8">
     <title>My Resume</title>
+    <link href="./public/style.css" rel="stylesheet"/>
+    <style>
+        #education {
+            display: flex;
+            gap: 15px;
+            width: 100%;
+        }
+
+        @media (min-width: 921px) {
+            #education {
+                gap: 300px;
+            }
+        }
+
+        @media (min-width: 1760px) {
+            #education {
+                gap: 1100px;
+            }
+        }
+    </style>
 </head>
 
 <body>
-    <h1>Cody McCarter</h1>
-    <!--TODO: Add photo-->
-    <h2>An aspiring web delevoper with experience as a QA Engineer doing manual testing and writing test automation.</h2>
-    <hr/>
-    
-    <div id="education">
-        <h3>Education</h3>
-        <h4>Lander University</h4>
-        <p>2009-2014</p>
-        <p>320 Stanley Ave, Greenwood, SC 29649</p>
-        <p>Bachelor of Science in Computer Information Systems</p>
-        <p>Minor in Mathematics</p>
+    <header>
+        <a href="./index.html">
+            <h1 class="name">Cody McCarter</h1>
+            <!--TODO: Add photo-->
+        </a>
+        <ul class="navbar">
+            <li class="nav-button active"><a href="./index.html">Home</a></li>
+            <li class="nav-button"><a href="./public/about.html">About</a></li>
+            <li class="nav-button"><a href="./public/contact.html">Contact Me</a></li>
+        </ul>
+        <h2>An aspiring web delevoper with experience as a QA Engineer doing manual testing and writing test automation.</h2>
+    </header>  
+
+    <div id="education" class="featured">
+        <div class="education-text">
+            <h2>Education</h2>
+            <h3>Lander University</h3>
+            <p>320 Stanley Ave, Greenwood, SC 29649</p>
+            <p>Bachelor's in Computer Information Systems</p>
+            <p>Minor in Mathematics</p>
+        </div>
+        <img src="./assets/images/landerUniTransparent.png" alt="lander University" />
     </div>
-    <hr/>
+
     <div id="jobHistory">
-        <h3>Job History</h3>
-        <section id="censis">
-            <h4>QA Engineer with <img src="./assets/images/CensisLogo.PNG" height="40"/></h4>
-            <p>September 2021 - Present</p>
-            <p>Fully remote position involving a mixture of manual testing and test automation using C# Selenium.</p>
-            <p>Duties included:</p>
-            <ul>
-                <li>Worked on multiple projects simultaniously with a mix of in-office and remote team members</li>
-                <li>Coordinated with developers and other QA to understand sprint work and plan test approaches</li>
-                <li>Utilized TestRail for Test Plan and Test Case management</li>
-                <li>Performed manual testing through UI testing, Data Integration testing, Regression testing, etc...</li>
-                <li>Used Jira for story and defect tracking and release planning</li>
-                <li>Wrote automated test cases using C# Selenium</li>
-                <li>Used Bitbucket and SourceTree for automation code management</li>
-            </ul>
-        </section>
-        <section id="floridaBlue">
-            <h4>Senior QA Tester with <img src="./assets/images/FloridaBlueLogo.PNG" height="30"></h4>
-            <p>November 2020 - September 2021 (on contract)</p>
-            <p>Fully remote position involving a mixture of manual testing and test automation using JavaScript Puppeteer</p>
-            <p>Duties included:</p>
-            <ul>
-                <li>Worked with team of fully remote members</li>
-                <li>Coordinated with developers and other QA to understand sprint work and plan test approaches</li>
-                <li>Utilized Rally for Test Case management, story and defect tracking, and pulling testing logistics per sprint</li>
-                <li>Performed manual testing through UI testing, Data Integration testing, Regression testing, etc...</li>
-                <li>Wrote automated test cases using JavaScript Puppeteer</li>
-                <li>Used Postman to test services as well as create scripts to automatically perform bulk service requests to create test data</li>
-                <li>Used Mongo to find and create test data for both manual and automated testing purposes</li>
-                <li>Supported releases by running regression against the producation environment.</li>
-            </ul>
-        </section>
-        <section id="aptexx">
-            <h4>QA Engineer with <img src="./assets/images/AptexxLogo.PNG" height="30"></h4>
-            <p>March 2018 - July 2020</p>
-            <p>Fully remote position involving a mixture of manual testing and test automation using Java Selenium</p>
-            <p>Duties included:</p>
-            <ul>
-                <li>Worked with team of fully remote members</li>
-                <li>Coordinated with developers and other QA to understand sprint work and plan test approaches</li>
-                <li>Used Jira for story and defect tracking and release planning</li>
-                <li>Wrote automated test cases using Java Selenium</li>
-                <li>Performed manual testing through UI testing, Data Integration testing, Regression testing, etc...</li>
-                <li>Performed ADA Compliance testing using Windows Narrator</li>
-            </ul>
-        </section>
-        <section id="boozAllen">
-            <h4>QA Tester with <img src="./assets/images/BahLogo.PNG" height="15"></h4>
-            <p>December 2014 - March 2018</p>
-            <p>In-office position involving a mixture of manual testing and test automation using Java Selenium</p>
-            <p>Duties included:</p>
-            <ul>
-                <li>Worked with a mix of in-office and remote team members on a project for the VA</li>
-                <li>Coordinated with developers and other QA to understand sprint work and plan test approaches</li>
-                <li>Used IBM's Rational suite of tools, including RTC and RQM</li>
-                <li>Worked with Technical Requirements Analysts to refine Story Acceptance Criteria</li>
-                <li>Performed manual testing through UI testing, Data Integration testing, Regression testing, etc...</li>
-                <li>Spearheaded the integration of test automation using Java Selenium to reduce workload during Regression testing</li>
-                <li>Performed 508 Compliance testing using JAWS screen reader</li>
-                <li>Supported User Acceptance Testing</li>
-            </ul>
-        </section>
+        <h2 class="header">Job History</h2>
+        <div class="card-container">
+            <div class="job-card">
+                <h3>QA Engineer</h3>
+                <img src="./assets/images/CensisLogo.PNG" alt="censis logo" class="job-logo" />
+                <p class="work-duration">September 2021 - Present</p>
+                <p class="work-summary">Fully remote position involving a mixture of manual testing and test automation using C# Selenium.</p>
+                <h4 class="duties">Hover for duties</h4>
+                <ul class="duties-list">
+                    <li>Worked on multiple projects simultaniously with a mix of in-office and remote team members</li>
+                    <li>Coordinated with developers and other QA to understand sprint work and plan test approaches</li>
+                    <li>Utilized TestRail for Test Plan and Test Case management</li>
+                    <li>Performed manual testing through UI testing, Data Integration testing, Regression testing, etc...</li>
+                    <li>Used Jira for story and defect tracking and release planning</li>
+                    <li>Wrote automated test cases using C# Selenium</li>
+                    <li>Used Bitbucket and SourceTree for automation code management</li>
+                </ul>
+            </div>
+            <div class="job-card">
+                <h3>Senior QA Tester</h3>
+                <img src="./assets/images/FloridaBlueLogo.PNG" alt="florida blue logo" class="job-logo" />
+                <p class="work-duration">November 2020 - September 2021 (on contract)</p>
+                <p class="work-summary">Fully remote position involving a mixture of manual testing and test automation using JavaScript Puppeteer</p>
+                <h4 class="duties">Hover for duties</h4>
+                <ul class="duties-list">
+                    <li>Worked with team of fully remote members</li>
+                    <li>Coordinated with developers and other QA to understand sprint work and plan test approaches</li>
+                    <li>Utilized Rally for Test Case management, story and defect tracking, and pulling testing logistics per sprint</li>
+                    <li>Performed manual testing through UI testing, Data Integration testing, Regression testing, etc...</li>
+                    <li>Wrote automated test cases using JavaScript Puppeteer</li>
+                    <li>Used Postman to test services as well as create scripts to automatically perform bulk service requests to create test data</li>
+                    <li>Used Mongo to find and create test data for both manual and automated testing purposes</li>
+                    <li>Supported releases by running regression against the producation environment.</li>
+                </ul>
+            </div>
+            <div class="job-card">
+                <h3>QA Engineer</h3>
+                <img src="./assets/images/AptexxLogo.PNG" alt="aptexx logo" class="job-logo" />
+                <p class="work-duration">March 2018 - July 2020</p>
+                <p class="work-summary">Fully remote position involving a mixture of manual testing and test automation using Java Selenium</p>
+                <h4 class="duties">Hover for duties</h4>
+                <ul class="duties-list">
+                    <li>Worked with team of fully remote members</li>
+                    <li>Coordinated with developers and other QA to understand sprint work and plan test approaches</li>
+                    <li>Used Jira for story and defect tracking and release planning</li>
+                    <li>Wrote automated test cases using Java Selenium</li>
+                    <li>Performed manual testing through UI testing, Data Integration testing, Regression testing, etc...</li>
+                    <li>Performed ADA Compliance testing using Windows Narrator</li>
+                </ul>
+            </div>
+            <div class="job-card">
+                <h3>QA Tester</h3>
+                <img src="./assets/images/BahLogo.PNG" alt="booz allen hamilton logo" class="job-logo" />
+                <p class="work-duration">December 2014 - March 2018</p>
+                <p class="work-summary">In-office position involving a mixture of manual testing and test automation using Java Selenium</p>
+                <h4 class="duties">Hover for duties</h4>
+                <ul class="duties-list">
+                    <li>Worked with a mix of in-office and remote team members on a project for the VA</li>
+                    <li>Coordinated with developers and other QA to understand sprint work and plan test approaches</li>
+                    <li>Used IBM's Rational suite of tools, including RTC and RQM</li>
+                    <li>Worked with Technical Requirements Analysts to refine Story Acceptance Criteria</li>
+                    <li>Performed manual testing through UI testing, Data Integration testing, Regression testing, etc...</li>
+                    <li>Spearheaded the integration of test automation using Java Selenium to reduce workload during Regression testing</li>
+                    <li>Performed 508 Compliance testing using JAWS screen reader</li>
+                    <li>Supported User Acceptance Testing</li>
+                </ul>
+            </div>
+        </div>
     </div>
-    <hr/>
     <div id="Skills">
-        <h3>Skills</h3>
-        <ul>
-            <li>Project-Related Skills
+        <h2 class="header">Skills</h2>
+        <div class="skill-container">
+            <div class="skill-card project">
+                <div class="skill-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-clipboard" viewBox="0 0 16 16">
+                        <path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1z"/>
+                        <path d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0z"/>
+                    </svg>
+                </div>
+                <h3>Project-Related Skills</h3>
                 <ul>
                     <li>Agile Scrum - 10+ years</li>
                     <li>Client Presentation - 5+ years</li>
                     <li>Jira - 5+ years</li>
                 </ul>
-            </li>
-            <li>QA Skills
+            </div>
+            <div class="skill-card qa">
+                <div class="skill-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-bug" viewBox="0 0 16 16">
+                        <path d="M4.355.522a.5.5 0 0 1 .623.333l.291.956A5 5 0 0 1 8 1c1.007 0 1.946.298 2.731.811l.29-.956a.5.5 0 1 1 .957.29l-.41 1.352A5 5 0 0 1 13 6h.5a.5.5 0 0 0 .5-.5V5a.5.5 0 0 1 1 0v.5A1.5 1.5 0 0 1 13.5 7H13v1h1.5a.5.5 0 0 1 0 1H13v1h.5a1.5 1.5 0 0 1 1.5 1.5v.5a.5.5 0 1 1-1 0v-.5a.5.5 0 0 0-.5-.5H13a5 5 0 0 1-10 0h-.5a.5.5 0 0 0-.5.5v.5a.5.5 0 1 1-1 0v-.5A1.5 1.5 0 0 1 2.5 10H3V9H1.5a.5.5 0 0 1 0-1H3V7h-.5A1.5 1.5 0 0 1 1 5.5V5a.5.5 0 0 1 1 0v.5a.5.5 0 0 0 .5.5H3c0-1.364.547-2.601 1.432-3.503l-.41-1.352a.5.5 0 0 1 .333-.623M4 7v4a4 4 0 0 0 3.5 3.97V7zm4.5 0v7.97A4 4 0 0 0 12 11V7zM12 6a4 4 0 0 0-1.334-2.982A3.98 3.98 0 0 0 8 2a3.98 3.98 0 0 0-2.667 1.018A4 4 0 0 0 4 6z"/>
+                    </svg>
+                </div>
+                <h3>QA Skills</h3>
                 <ul>
                     <li>Test Case Creation/Management - 10+ years</li>
                     <li>Test Plan Creation/Management - 10+ years</li>
                     <li>Troubleshooting/Debugging - 10+ years</li>
                     <li>Manual Testing - 10+ years</li>
                     <li>Selenium Test Automation - 8+ years</li>
+                    <li>TestRail - 5+ years</li>
                 </ul>
-            </li>
-            <li>Coding Languages
+            </div>
+            <div class="skill-card coding">
+                <div class="skill-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-braces" viewBox="0 0 16 16">
+                        <path d="M2.114 8.063V7.9c1.005-.102 1.497-.615 1.497-1.6V4.503c0-1.094.39-1.538 1.354-1.538h.273V2h-.376C3.25 2 2.49 2.759 2.49 4.352v1.524c0 1.094-.376 1.456-1.49 1.456v1.299c1.114 0 1.49.362 1.49 1.456v1.524c0 1.593.759 2.352 2.372 2.352h.376v-.964h-.273c-.964 0-1.354-.444-1.354-1.538V9.663c0-.984-.492-1.497-1.497-1.6M13.886 7.9v.163c-1.005.103-1.497.616-1.497 1.6v1.798c0 1.094-.39 1.538-1.354 1.538h-.273v.964h.376c1.613 0 2.372-.759 2.372-2.352v-1.524c0-1.094.376-1.456 1.49-1.456V7.332c-1.114 0-1.49-.362-1.49-1.456V4.352C13.51 2.759 12.75 2 11.138 2h-.376v.964h.273c.964 0 1.354.444 1.354 1.538V6.3c0 .984.492 1.497 1.497 1.6"/>
+                    </svg>
+                </div>
+                <h3>Coding Languages</h3>
                 <ul>
                     <li>Java - 5+ years</li>
                     <li>SQL - 5+ years</li>
                     <li>C# - 3+ years</li> 
-                    <li>JavaScript - 3+ years</li>      
+                    <li>JavaScript - 3+ years</li>
+                    <li>HTML - 3+ years</li>
+                    <li>CSS - 3+ years</li>    
                 </ul>
-            </li>
-        </ul>
+            </div>
+        </div>
     </div>
+
     <footer>
-        <h3>Want to know <a href="./public/about.html">more</a>?</h3>
-        
-        <h3>I'd love to <a href="./public/contact.html">hear</a> from you</h3>
+        <ul class="navbar" style="justify-content: center;">
+            <li class="nav-button"><a href="./index.html">Home</a></li>
+            <li class="nav-button"><a href="./public/about.html">About</a></li>
+            <li class="nav-button"><a href="./public/contact.html">Contact Me</a></li>
+        </ul>
+        <p class="centered">© 2024 Cody McCarter</p>
     </footer>
 </body>
 </html>

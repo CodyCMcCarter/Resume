@@ -1,0 +1,209 @@
+body {
+    background-color: #142850;
+    color: #00A8CC;
+}
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    grid-template-columns: 1fr max-content;
+    grid-template-rows: 1fr 1fr;
+    padding: 0.5rem 1rem 0.5rem 2rem;
+    margin-bottom: 0;
+}
+
+header > h2 {
+    width: 100%;
+}
+
+a {
+    color: #00A8CC;
+    text-decoration: none;
+}
+
+.name {
+    display: flex;
+}
+
+.nav-button {
+    padding: 10px 10px 10px 10px;
+    margin-top: 20px;
+}
+
+.nav-button > a {
+    display: block;
+    padding: 8px 16px;
+}
+
+.active {
+    border-radius: 20px;
+    background-color: #27496D;
+}
+
+header > h2 {
+    grid-column:1 / -1;
+}
+
+.navbar {
+    display: flex;
+    margin-top: 0;
+    list-style: none;
+    justify-content: left;
+    padding-left: 10px;
+}
+
+.nav-button {
+    margin-left: 10px;
+}
+
+.header {
+    padding: 3rem 2rem;
+}
+
+.featured {
+    background-color: #27496D;
+    padding: 3rem 2rem;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 1.5rem 3rem 1.5rem;
+}
+
+.job-card {
+    display: grid;
+    grid-template-columns: 12rem 12rem;
+    grid-template-rows: 6rem 7rem 5rem;
+    gap: 10px;
+    background-color: #27496D;
+    width: 400px;
+    max-width: 400px;
+    height: 400px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    padding: 5px;
+    border-radius: 10%;
+}
+
+.job-logo {
+    width: 150px;
+}
+
+.duties-list li {
+    position: relative;
+	padding-bottom: 10px;
+}
+
+.duties {
+    grid-column: 1/-1;
+    text-align: center;
+}
+
+.job-card > .duties-list {
+    list-style: none;
+    max-height: 0px;
+    grid-column: 1/-1;
+    opacity: 0;
+    overflow: hidden;
+    transition: opacity 300ms ease;
+}
+
+.job-card > .duties-list li:before{
+    content: '';
+    position: absolute;
+    border-right: 2px solid white;
+    border-bottom: 2px solid white;
+    width: 10px;
+    height: 10px;
+    top: calc(50% - 4px);
+    left: -20px;
+    transform: translateY(-50%) rotate(-45deg);
+ }
+
+ .job-card:hover > .duties-list {
+    opacity: 1;
+    max-height: inherit;
+    background-color: #27496DDD;
+    color: white;
+    position: relative;
+    top: -324px;
+    left: -5px;
+    margin: 0px;
+    padding: 25px;
+    width: 361px;
+    height: 361px;
+    border-radius: 10%;
+}
+
+.skill-icon {
+    background-color: #00A8CC;
+    color: #142850;
+    width: 4rem;
+    height: 4rem;
+    border-radius: .75rem;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.skill-container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 2rem 3rem 2rem;
+    width: 100%;
+}
+
+.skill-card {
+    padding: 0 12px 0 12px;
+    width: 20%;
+}
+
+.project {
+    order: 1;
+}
+
+.coding {
+    order: -1;
+}
+
+.skill-card > ul {
+    list-style: none;
+    position: relative;
+    left: -39px;
+}
+
+.skill-card li {
+    padding-bottom: 5px;
+}
+
+footer {
+    padding: 2rem 3rem;
+}
+
+footer .navbar {
+    border-bottom: 1px solid #00A8CC;
+
+}
+
+.centered {
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    a {
+      margin-right: auto;
+      margin-bottom: 0;
+    }
+
+    .navbar {
+        padding-left: 0;
+    }
+}
+
+@media (max-width: 1760px) and (min-width: 1000px) {
+    .card-container {
+        width: 1200px;
+    }
+}

@@ -3,18 +3,65 @@
     <head>
         <meta charset="UTF-8">
         <title>Contact Me</title>
+        <link href="./style.css" rel="stylesheet"/>
+        <style>
+            .contact-card {
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-template-rows: 1fr 1fr 1fr;
+                gap: 10px;
+                background-color: #27496D;
+                width: 200px;
+                height: 200px;
+                margin-left: 10px;
+                margin-bottom: 10px;
+                padding: 5px;
+                border-radius: 10%;
+            }
+
+            .email {
+                text-decoration: underline;
+            }
+        </style>
     </head>
     <body>
-        <h1>Contact Me</h1>
+        <header>
+            <a href="../index.html">
+                <h1 class="name">Cody McCarter</h1>
+            </a>
+            <ul class="navbar">
+                <li class="nav-button active"><a href="../index.html">Home</a></li>
+                <li class="nav-button"><a href="./about.html">About</a></li>
+                <li class="nav-button"><a href="./contact.html">Contact Me</a></li>
+            </ul>
+            <h2>Contact me:</h2>
+        </header>
         
-        <h3>Address</h3>
-        <p>6537 Sawtooth Dr</p>
-        <p>Ooltewah, TN 37363</p>
+        <div class="card-container">
+            <div class="contact-card">
+                <h2>Address</h2>
+                <p>6537 Sawtooth Dr</p>
+                <p>Ooltewah, TN 37363</p>
+            </div>
 
-        <h3>Cell</h3>
-        <p>843-901-6997</p>
+            <div class="contact-card">
+                <h2>Cell</h2>
+                <p>843-901-6997</p>
+            </div>
 
-        <h3>Email</h3>
-        <a href="mailto: codycmccarter@gmail.com">codycmccarter@gmail.com</a>
+            <div class="contact-card">
+                <h2>Email</h2>
+                <a class="email" href="mailto: codycmccarter@gmail.com">codycmccarter@gmail.com</a>
+            </div>
+        </div>
+
+        <footer>
+            <ul class="navbar" style="justify-content: center;">
+                <li class="nav-button"><a href="../index.html">Home</a></li>
+                <li class="nav-button"><a href="./about.html">About</a></li>
+                <li class="nav-button"><a href="./contact.html">Contact Me</a></li>
+            </ul>
+            <p class="centered">© 2024 Cody McCarter</p>
+        </footer>
     </body>
 </html>
