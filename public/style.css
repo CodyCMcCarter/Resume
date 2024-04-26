@@ -109,7 +109,7 @@ header > h2 {
     transition: opacity 300ms ease;
 }
 
-.job-card > .duties-list li:before{
+.job-card > .duties-list li::before{
     content: '';
     position: absolute;
     border-right: 2px solid white;
