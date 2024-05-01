@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>About Me</title>
+        <link href="./style.css" rel="stylesheet"/>
+        <style>
+            .hobby-icon:hover ~ .hobby-list {
+                opacity: 1;
+                max-height: inherit;
+            }
+
+            .hobby-list {
+                overflow: hidden;
+                transition: opacity 300ms ease;
+                opacity: 0;
+            }
+
+            .hobby-header {
+                margin-bottom: 0;
+                padding-bottom: 0;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <a href="../index.html">
+                <h1 class="name">Cody McCarter</h1>
+            </a>
+            <ul class="navbar">
+                <li class="nav-button active"><a href="../index.html">Home</a></li>
+                <li class="nav-button"><a href="./about.html">About</a></li>
+                <li class="nav-button"><a href="./contact.html">Contact Me</a></li>
+            </ul>
+            <h2>How About We Get More Personal?</h2>
+        </header>
+
+        <div class="personal-life featured">
+            <h2>Personal Life</h2>
+            <p>
+                I am a 33 year old husband and father. I love my family and highly value my time with them. 
+                I love getting down on the floor and playing with my 2 year old son. 
+                I also love relaxing and cuddling up with my wife to watch shows on various streaming services. 
+                I enjoy playing games with friends online, currently Helldivers 2 more often than not.
+            </p>
+            <!--Add photo of family?-->
+        </div>
+
+        <h2 class="header hobby-header">Hobbies</h2>
+        <p style="margin-left: 2rem; padding-bottom: 3rem;">Hover for details</p>
+        <div class="skill-container">
+            <div class="skill-card hobby-card">
+                <div class="skill-icon hobby-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-controller" viewBox="0 0 16 16">
+                        <path d="M11.5 6.027a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0m-1.5 1.5a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1m2.5-.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0m-1.5 1.5a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1m-6.5-3h1v1h1v1h-1v1h-1v-1h-1v-1h1z"/>
+                        <path d="M3.051 3.26a.5.5 0 0 1 .354-.613l1.932-.518a.5.5 0 0 1 .62.39c.655-.079 1.35-.117 2.043-.117.72 0 1.443.041 2.12.126a.5.5 0 0 1 .622-.399l1.932.518a.5.5 0 0 1 .306.729q.211.136.373.297c.408.408.78 1.05 1.095 1.772.32.733.599 1.591.805 2.466s.34 1.78.364 2.606c.024.816-.059 1.602-.328 2.21a1.42 1.42 0 0 1-1.445.83c-.636-.067-1.115-.394-1.513-.773-.245-.232-.496-.526-.739-.808-.126-.148-.25-.292-.368-.423-.728-.804-1.597-1.527-3.224-1.527s-2.496.723-3.224 1.527c-.119.131-.242.275-.368.423-.243.282-.494.575-.739.808-.398.38-.877.706-1.513.773a1.42 1.42 0 0 1-1.445-.83c-.27-.608-.352-1.395-.329-2.21.024-.826.16-1.73.365-2.606.206-.875.486-1.733.805-2.466.315-.722.687-1.364 1.094-1.772a2.3 2.3 0 0 1 .433-.335l-.028-.079zm2.036.412c-.877.185-1.469.443-1.733.708-.276.276-.587.783-.885 1.465a14 14 0 0 0-.748 2.295 12.4 12.4 0 0 0-.339 2.406c-.022.755.062 1.368.243 1.776a.42.42 0 0 0 .426.24c.327-.034.61-.199.929-.502.212-.202.4-.423.615-.674.133-.156.276-.323.44-.504C4.861 9.969 5.978 9.027 8 9.027s3.139.942 3.965 1.855c.164.181.307.348.44.504.214.251.403.472.615.674.318.303.601.468.929.503a.42.42 0 0 0 .426-.241c.18-.408.265-1.02.243-1.776a12.4 12.4 0 0 0-.339-2.406 14 14 0 0 0-.748-2.295c-.298-.682-.61-1.19-.885-1.465-.264-.265-.856-.523-1.733-.708-.85-.179-1.877-.27-2.913-.27s-2.063.091-2.913.27"/>
+                    </svg>
+                </div>
+                <h3>Video Games</h3>
+                <ul class="hobby-list">
+                    <li>RogueLike</li>
+                    <li>Survival</li>
+                    <li>Action Platformer</li>
+                    <li>First/Third Person Shooters</li>
+                    <li>Anything Co-op</li>
+                </ul>
+            </div>
+            <div class="skill-card hobby-card">
+                <div class="skill-icon hobby-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-collection-play" viewBox="0 0 16 16">
+                        <path d="M2 3a.5.5 0 0 0 .5.5h11a.5.5 0 0 0 0-1h-11A.5.5 0 0 0 2 3m2-2a.5.5 0 0 0 .5.5h7a.5.5 0 0 0 0-1h-7A.5.5 0 0 0 4 1m2.765 5.576A.5.5 0 0 0 6 7v5a.5.5 0 0 0 .765.424l4-2.5a.5.5 0 0 0 0-.848z"/>
+                        <path d="M1.5 14.5A1.5 1.5 0 0 1 0 13V6a1.5 1.5 0 0 1 1.5-1.5h13A1.5 1.5 0 0 1 16 6v7a1.5 1.5 0 0 1-1.5 1.5zm13-1a.5.5 0 0 0 .5-.5V6a.5.5 0 0 0-.5-.5h-13A.5.5 0 0 0 1 6v7a.5.5 0 0 0 .5.5z"/>
+                    </svg>
+                </div>
+                <h3>Watching Youtube/Shows</h3>
+                <ul class="hobby-list">
+                    <li>Let's Plays</li>
+                    <li>Anime</li>
+                    <li>Adult Animations</li>
+                    <li>Cooking</li>
+                    <li>Contest/Game Shows</li>
+                </ul>
+            </div>
+            <div class="skill-card hobby-card">
+                <div class="skill-icon hobby-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-pencil" viewBox="0 0 16 16">
+                        <path d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 .11-.168zM11.207 2.5 13.5 4.793 14.793 3.5 12.5 1.207zm1.586 3L10.5 3.207 4 9.707V10h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.293zm-9.761 5.175-.106.106-1.528 3.821 3.821-1.528.106-.106A.5.5 0 0 1 5 12.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.468-.325"/>
+                    </svg>
+                </div>
+                <h3>Writing Short <a href="https://docs.google.com/document/d/1y3zmOcfhqHdpLRQmYyIY6ns5c0BLD4CrMHitp1udnxg/edit?usp=sharing" style="text-decoration: underline;">Stories</a></h3>
+            </div>
+            <div class="skill-card hobby-card">
+                <div class="skill-icon hobby-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
+                        <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0m6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0"/>
+                    </svg>
+                </div>
+                <h3>Web Development</h3>
+                <p class="hobby-list">You're looking at it!</p>
+            </div>
+            <div class="skill-card hobby-card">
+                <div class="skill-icon hobby-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-book-half" viewBox="0 0 16 16">
+                        <path d="M8.5 2.687c.654-.689 1.782-.886 3.112-.752 1.234.124 2.503.523 3.388.893v9.923c-.918-.35-2.107-.692-3.287-.81-1.094-.111-2.278-.039-3.213.492zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783"/>
+                    </svg>
+                </div>
+                <h3>Reading</h3>
+                <ul class="hobby-list">
+                    <li>Fantasy</li>
+                    <li>Sci-Fi</li>
+                    <li>Adventure</li>
+                </ul>
+            </div>
+            <div class="skill-card hobby-card">
+                <div class="skill-icon hobby-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-easel" viewBox="0 0 16 16">
+                        <path d="M8 0a.5.5 0 0 1 .473.337L9.046 2H14a1 1 0 0 1 1 1v7a1 1 0 0 1-1 1h-1.85l1.323 3.837a.5.5 0 1 1-.946.326L11.092 11H8.5v3a.5.5 0 0 1-1 0v-3H4.908l-1.435 4.163a.5.5 0 1 1-.946-.326L3.85 11H2a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1h4.954L7.527.337A.5.5 0 0 1 8 0M2 3v7h12V3z"/>
+                    </svg>
+                </div>
+                <h3>Drawing</h3>
+                <ul class="hobby-list">
+                    <li>Anime/Game Characters</li>
+                    <li>Robots/Mechs</li>
+                    <li>Web Designs</li>
+                    <li>Original Characters</li>
+                    <li>(I'm not one of those kinds, I swear)</li>
+                </ul>
+            </div>
+            <div class="skill-card hobby-card">
+                <div class="skill-icon hobby-icon">
+                    <svg width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" fill="none" xmlns="http://www.w3.org/2000/svg" color="#000000"><path d="M4 7L4 17" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M1 7L23 7" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M4 10L20 10" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M20 7L20 17" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                </div>
+                <h3>Tabletop Games</h3>
+                <ul class="hobby-list">
+                    <li>Board Games</li>
+                    <li>Deck Builders</li>
+                    <li>TTRPGs (DnD, etc)</li>
+                </ul>
+            </div>
+        </div>
+
+        <footer>
+            <ul class="navbar" style="justify-content: center;">
+                <li class="nav-button"><a href="../index.html">Home</a></li>
+                <li class="nav-button"><a href="./about.html">About</a></li>
+                <li class="nav-button"><a href="./contact.html">Contact Me</a></li>
+            </ul>
+            <p class="centered">© 2024 Cody McCarter</p>
+        </footer>
+    </body>
+</html>
